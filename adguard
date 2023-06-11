@@ -1,1 +1,10 @@
+! ---------- Generic Blocking Rules ----------c54c54.com$all
+! Author: Vinh Nguyen
+! Source: https://github.com/vinhvgs/hostsVN
+! License: https://github.com/vinhvgs/hostsVN
+! Homepage: https://github.com/vinhvgs/hostsVN
+! Expires: 1 day (update frequency)
+! Updated: 06/11/2023, 09:15:44
+! Title: (AdGuard Custom)
+
 dragonphim.tv###popup-giua-man-hinh > div.popUpBannerBox:first-child > div.popUpBannerInner > div.popUpBannerContent
