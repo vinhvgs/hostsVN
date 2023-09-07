@@ -4,7 +4,7 @@
 ! License: https://github.com/vinhvgs/hostsVN
 ! Homepage: https://github.com/vinhvgs/hostsVN
 ! Expires: 1 day (update frequency)
-! Updated: 09/07/2023, 08:38:44
+! Updated: 09/07/2023, 21:18:44
 ! Title: (AdGuard Custom)
 
 dragonphim.tv###popup-giua-man-hinh > div.popUpBannerBox:first-child > div.popUpBannerInner > div.popUpBannerContent
@@ -52,5 +52,4 @@ xoilacz.com###quangcaopc
 xoilacz.com###dnn_balloon_botright > p.mb-1 > a > img.img-fluid
 xoilacz.com###app > main:nth-child(2) > div.container.main > div.content_page.row > div.col-xs-12.col-sm-12.col-md-12 > div.row.d-none.d-lg-flex.mt-3:nth-child(15) > div.col-12 > p.mb-1:first-child > a > img.img-fluid
 xoilacz.com###app > main:nth-child(2) > div.container.main > div.content_page.row > div.col-xs-12.col-sm-12.col-md-12 > div.row.d-none.d-lg-flex.mt-3:nth-child(15) > div.col-12 > p.mb-1:last-child > a > img.img-fluid
-24h.com.vn###vCYIhyCFde_145_15s_vid_bg
-24h.com.vn###qWLrGiOgVP_145_15s
+24h.com.vn##.bnrHmL
