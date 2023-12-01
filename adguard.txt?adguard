@@ -4,7 +4,7 @@
 ! License: https://github.com/vinhvgs/hostsVN
 ! Homepage: https://github.com/vinhvgs/hostsVN
 ! Expires: 1 day (update frequency)
-! Updated: 10/18/2023, 21:18:44
+! Updated: 12/19/2023, 20:10:44
 ! Title: (AdGuard Custom)
 
 dragonphim.tv###popup-giua-man-hinh > div.popUpBannerBox:first-child > div.popUpBannerInner > div.popUpBannerContent
@@ -63,3 +63,4 @@ outlook.live.com###mailListMainContainer > div > div > div:first-child
 @@||my.kaspersky.com^$important,document
 apkmodvn.com###fNtf
 file.apkmoddone.com##div.fcFx
+file.apkmoddone.com###nldblog-ad
