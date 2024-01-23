@@ -1,0 +1,141 @@
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "8.8.8.8"
+        ],
+        "tag": "dns",
+        "hosts": {}
+    },
+    "inbounds": [
+        {
+            "port": 9898,
+            "protocol": "dokodemo-door",
+            "tag": "proxy-in",
+            "settings": {
+                "followRedirect": true,
+                "network": "tcp,udp"
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "streamSettings": {
+                "sockopt": {
+                    "tproxy": "tproxy"
+                }
+            }
+        }
+    ],
+    "log": {
+        "access": "none",
+        "dnsLog": true,
+        "loglevel": "error"
+    },
+    "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false,
+        "xudpConcurrency": 8,
+        "xudpProxyUDP443": ""
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "103.167.84.228",
+            "port": 80,
+            "users": [
+              {
+                "alterId": 0,
+                "encryption": "",
+                "flow": "",
+                "id": "e02537a3-fc9f-4d09-8896-54865bac9e4c",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "",
+        "wsSettings": {
+          "headers": {
+            "Host": "dl.aw.freefiremobile.com"
+          },
+          "path": "/viettel.vinhmkt.net"
+        }
+      },
+      "tag": "proxy"
+    },
+        {
+            "protocol": "freedom",
+            "tag": "direct",
+            "settings": {
+                "domainStrategy": "UseIP"
+            }
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block",
+            "settings": {
+                "response": {
+                    "type": "http"
+                }
+            }
+        },
+        {
+            "protocol": "dns",
+            "tag": "dns-out"
+        }
+    ],
+    "routing": {
+        "domainMatcher": "mph",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "inboundTag": [
+                    "proxy-in"
+                ],
+                "outboundTag": "dns-out",
+                "port": 53,
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "regexp:^.*googlesyndication.com$",
+                    "regexp:^.*adtival\\.network$"
+                ],
+                "outboundTag": "proxy",
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "geosite:youtube"
+                ],
+                "network": "udp",
+                "outboundTag": "block",
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "geosite:category-ads-all"
+                ],
+                "outboundTag": "block",
+                "type": "field"
+            },
+            {
+                "network": "tcp,udp",
+                "outboundTag": "proxy",
+                "type": "field"
+            }
+        ]
+    }
+}
