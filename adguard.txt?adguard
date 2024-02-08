@@ -79,3 +79,5 @@ web1s.asia###pwutuspssnwuqrpmmtupntmmpwutuspssnwuqrp
 ##div.modal-backdrop.fade.show:last-child
 bmtrau.com##.sweet-overlay
 bmtrau.com##.sweet-alert, .showSweetAlert, .visible
+bmtrau.com###exampleModal
+bmtrau.com##div.modal-backdrop.fade.show:nth-child(27)
