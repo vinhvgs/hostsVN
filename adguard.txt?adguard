@@ -81,3 +81,4 @@ bmtrau.com##.sweet-overlay
 bmtrau.com##.sweet-alert, .showSweetAlert, .visible
 bmtrau.com###exampleModal
 bmtrau.com##div.modal-backdrop.fade.show:nth-child(27)
+bmtrau.com##div.modal-backdrop.fade.show:nth-child(28)
