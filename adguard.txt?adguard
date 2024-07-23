@@ -4,7 +4,7 @@
 ! License: https://github.com/vinhvgs/hostsVN
 ! Homepage: https://github.com/vinhvgs/hostsVN
 ! Expires: 1 day (update frequency)
-! Updated: 05/28/2024, 17:10:44
+! Updated: 07/23/2024, 20:08:44
 ! Title: (AdGuard Vinh)
 
 dragonphim.tv###popup-giua-man-hinh > div.popUpBannerBox:first-child > div.popUpBannerInner > div.popUpBannerContent
@@ -88,3 +88,4 @@ vnexpress.net##.js_installvneapp.installvneapp--small.installvneapp
 @@||shopads365.com^$important,document
 outlook.live.com###MailList > div.ONAp_ > div.Cz7T5 > div.Cz7T5 > div.X4w2q.zXLz3 > div.FiPRo > div.customScrollBar.jEpCF > div > div:first-child > div.EeHm8 > div > div.kk1xx.lHRXq.iIsOF.IjQyD > div.jGG6V > div.kDQ0p.fz7QX._CNdR.Qhdyf
 24h.com.vn###class_box_hot1
+@@||www.facebook.com^$important,document
